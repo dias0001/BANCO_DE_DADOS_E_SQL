@@ -2824,12 +2824,12 @@ ON C.IDCLIENTE = T.ID_CLIENTE;
 | Carlos  | carlos@gmail.com  | rj     | 88687909 |
 | FLAVIO  | FLAVIO@IG.COM     | MG     | 68976565 |
 | FLAVIO  | FLAVIO@IG.COM     | MG     | 99656675 |
-| GIOVANA | ************      | RJ     | 33567765 |
-| GIOVANA | ************      | RJ     | 88668786 |
-| GIOVANA | ************      | RJ     | 55689654 |
+| GIOVANA | NÃO TEM EMAIL     | RJ     | 33567765 |
+| GIOVANA | NÃO TEM EMAIL     | RJ     | 88668786 |
+| GIOVANA | NÃO TEM EMAIL     | RJ     | 55689654 |
 | KARLA   | KARLA@GMAIL.COM   | RJ     | 88687979 |
 | DANIELE | DANIELE@GMAIL.COM | ES     | 88965676 |
-| EDUARDO | ************      | PR     | 89966809 |
+| EDUARDO | NÃO TEM EMAIL     | PR     | 89966809 |
 | ANTONIO | ANTONIO@IG.COM    | SP     | 88679978 |
 | ANTONIO | ANTONIO@UOL.COM   | PR     | 99655768 |
 | ELAINE  | ELAINE@GLOBO.COM  | SP     | 89955665 |
@@ -2855,6 +2855,7 @@ INNER JOIN TELEFONE T
 ON C.IDCLIENTE = T.ID_CLIENTE 
 INNER JOIN ENDERECO E 
 ON C.IDCLIENTE = E.ID_CLIENTE;
+
 
 CREATE VIEW RELATORIO AS
 SELECT  C.NOME, 
